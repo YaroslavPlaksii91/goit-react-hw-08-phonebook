@@ -20,11 +20,11 @@ const ContactList = () => {
   return (
     <ul className={s.contacts}>
       {contacts &&
-        filteredContacts.map(({ name, id, phone }) => (
+        filteredContacts.map(({ name, id, number }) => (
           <li key={id} className={s.contactsItem}>
             <ContactListElem
               name={name}
-              number={phone}
+              number={number}
               onDelete={() => deleteContact(id)}
             />
           </li>

@@ -34,7 +34,7 @@ const ContactForm = () => {
       return;
     }
 
-    createContact({ name, phone: number });
+    createContact({ name, number });
 
     resetForm();
 
